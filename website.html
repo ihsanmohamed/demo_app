@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Shopping Mall</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            display: inline-block;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition: color 0.4s case; 
+        }
+        nav a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            opacity:0;
+            transform:translateY(20px);
+            animation: fadeIn 2s forwards;
+        }
+          @keyframes fadeIn{
+            to{
+                opacity: 1;
+                transform: translateY(2);
+            }
+        }
+    
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product-item {
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .product-item:hover{
+            transform:scale(1.05)
+            
+        }
+        .product-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .product-title {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+        .product-price {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .about, .products-section {
+            margin-bottom: 50px;
+        }
+        .about p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Shopping Mall</h1>
+        <p>Your one-stop shop for food, perfumes, and educational products</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#food">Food</a>
+        <a href="#perfumes">Perfumes</a>
+        <a href="#education">Educational Items</a>
+    </nav>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2 class="section-title">About Us</h2>
+            <p>Welcome to the Shopping Mall, your ultimate shopping destination for fresh foods, delightful perfumes, and quality educational items. We provide a diverse selection of high-quality products to meet all your needs in one convenient location.</p>
+        </section>
+
+        <!-- Food Section -->
+        <section id="food" class="products-section">
+            <h2 class="section-title">Food</h2>
+            <div class="products-grid">
+                <!-- Product Item 1 -->
+                <div class="product-item">
+                    <img src="vegetables.webp" alt="Fresh Vegetables">
+                    <h3 class="product-title">Fresh Vegetables</h3>
+                    <p class="product-price">Rs:250 per kg</p>
+                </div>
+                <!-- Product Item 2 -->
+                <div class="product-item">
+                    <img src="assorted fruit photo-6825-8b8e196d9d5fd4470911d69ad25fa5e0@1x.jpg">
+                    <h3 class="product-title">Organic Fruits</h3>
+                    <p class="product-price">Rs:350 per kg</p>
+                </div>
+                <div class="product-item">
+                    <img src="istockphoto-184946701-612x612.jpg"alt="Pizza">
+                    <h3 class="product-title">Teste Pizza</h3>
+                    <p class="product-price">Rs:1800.00 One Pizza</p>
+
+                </div>
+                <div class="product-item">
+                    <img src="112019658.webp"alt="">
+                    <h3 class="product-title">Ice Cream </h3>
+                    <p class="product-price">Rs:500.00 Up</p>
+                </div>
+                <div class="product-item">
+                    <img src="fizzy-drinks-v0-yyr6vtruhzbb1.webp"alt="Drinks">
+                    <h3 class="product-title">Soft Drinks</h3>
+                    <p class="product-price">Rs:250.00 Up</p>
+
+                </div>
+                <div class="product-item">
+                    <img src="guide-to-well-drinks-tequila-sunrise.jpg"alt="Juices">
+                    <h3 class="product-title">Fresh Juices</h3>
+                    <p class="product-price">Rs:450.00 Up</p>
+
+                </div>
+                <div class="product-item">
+                    <img src="1706529522.webp"alt="Recipes">
+                    <h3 class="product-title">Chicken Recipes</h3>
+                    <p class="product-price">Rs:1400.00 5pcs</p>
+
+                </div>
+                <div class="product-item">
+                    <img src="images.jpeg"alt="Burger">
+                    <h3 class="product-title">Burger</h3>
+                    <p class="product-price">Rs:800.00 Up</p>
+
+                </div>
+                <div>
+                    
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Perfumes Section -->
+        <section id="perfumes" class="products-section">
+            <h2 class="section-title">Perfumes</h2>
+            <div class="products-grid">
+                <!-- Product Item 1 -->
+                <div class="product-item">
+                    <img src="A2.jpg" alt="Fogg Perfume">
+                    <h3 class="product-title">Fogg Perfume</h3>
+                    <p class="product-price">Rs:4500.00</p>
+                </div>
+                <!-- Product Item 2 -->
+                <div class="product-item">
+                    <img src="paco-rabanne-pure-xs-for-men-eau-de-toilette-100ml_1.avif" alt="XS Perfume">
+                    <h3 class="product-title">XS Perfume</h3>
+                    <p class="product-price">Rs:6000.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="Game-Changing_Hacks_for_Perfumes_that_last_long.webp" alt="WILD STONE">
+                    <h3 class="product-title">WILD STONE</h3>
+                    <p class="product-price">Rs:3500.00</p>
+                </div>
+                <div class="product-item">
+                    <img src="arthur-harutyunyan-kopqrl9ewji-unsplash.jpeg" alt="Sauage">
+                    <h3 class="product-title">SAUVAGE</h3>
+                    <p class="product-price">Rs:8000.00</p>
+
+                </div>
+                <div class="product-item">
+                    <img src="41Q97FEQ41L._SL500_._AC_SL500_.jpg" alt="BlackBerry Perfume">
+                    <h3 class="product-title">BlackBerry </h3>
+                    <p class="product-price">Rs:4800.00</p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Educational Items Section -->
+        <section id="education" class="products-section">
+            <h2 class="section-title">Educational Items</h2>
+            <div class="products-grid">
+                <!-- Product Item 1 -->
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Math Textbook">
+                    <h3 class="product-title">Math Textbook</h3>
+                    <p class="product-price">Rs:500.00</p>
+                </div>
+                <!-- Product Item 2 -->
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300x200" alt="Science Kit">
+                    <h3 class="product-title">Science Kit</h3>
+                    <p class="product-price">Rs:200.00</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p> Food Shopping Mall. All rights reserved.<br>Thank You</p>
+    </footer>
+</body>
+</html>
